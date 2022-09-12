@@ -1,0 +1,296 @@
+
+/* Nav SECTION */
+
+/* banner SECTION */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    width: 1170px;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+  }
+  .i{
+    font-size:27px; 
+    color: #02918c;
+  }
+  
+  /* Navbar  STARTS HERE */
+  nav {
+    background-color: #02918c;
+  }
+  
+  nav .logo {
+    width: 30%;
+  }
+  nav .menu {
+    width: 70%;
+  }
+  nav .menu ul {
+    text-align: right;
+  }
+  nav .menu ul li {
+    display: inline-block;
+  }
+  nav .menu ul li a {
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 26px 25px;
+    display: block;
+  }
+  /* Navbar SECTION */
+  
+
+
+#banner{
+    background-image: url(../img/banner.jpg);
+    background-color: rgba(0, 0, 0, 0.34);
+    background-blend-mode: multiply;
+    height: 730px;
+    background-size: cover;
+    background-position:center ;
+    
+}
+#banner .bc{
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+#banner .bc h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner .bc p{
+    font-size: 18px;
+    font-weight: 400;
+}
+#banner .bc h1{
+    text-transform: uppercase;
+    font-size: 68px;
+    font-weight: 400;
+    letter-spacing: 30px;
+}
+.button{
+    text-transform: uppercase;
+    background-color: #cfc91d;
+    width: 195px;
+    height: 47px;
+    line-height:47px ;
+    color: black;
+    font-size: 14px;
+    font-weight: 800;
+    display: block;
+    margin: auto;
+}
+#banner .bc img{
+   margin: 50px 0;
+
+}
+#banner .row {
+    height: 730px;
+  }
+  /* banner SECTION */
+
+
+  /*About*/
+  #about {
+padding: 98px 0 ;
+  }
+  .h2 {
+    color: #02918c;
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    }
+    .h2::after{
+content:"" ;
+width: 162px;
+height: 9px;
+background-image: url(../img/b2.png);
+position: absolute;
+bottom: -31px;;
+left: 50%;
+transform: translatex(-50%);
+
+
+    }
+    .p2{
+        font-size: 16px;
+        font-weight: 400;
+        color: #7e8287;
+        text-align: center;
+       
+    }
+    .s1{
+        font-size: 23px;
+        font-weight: 800;
+    }
+  #about .p2{
+    margin: 70px auto 30px auto;
+    width: 874px;
+  }
+#about .acard{
+  width: 25%;
+  text-align: center;
+  border-right: 1px solid#b9babb;
+  padding: 18px 0;
+}
+#about .acard:last-child {
+  border: none;
+}
+ .subHeading{
+  font-size: 16px;
+  font-weight: 800;
+  color: #7e8287;
+  margin: 32px 0 ;
+}
+.cardCnt{
+  
+    color: #7e8287;
+    font-size: 11px;
+    font-weight: 400;
+    padding:  0 50px;
+  }
+/* WORK STARTS HERE */
+#work {
+  padding: 50px 0;
+}
+
+.workCard {
+  width: 25%;
+  position: relative;
+}
+.workCard img {
+  width: 100%;
+  display: block;
+}
+/* WORK STARTS HERE */
+/* SERVICE STARTS HERE */
+#service {
+  padding: 73px 0;
+  background-image: url(../img/service.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.serviceleft {
+  width: 50%;
+}
+#service .h2 {
+  text-align: left;
+}
+
+#service .h2::after {
+  left: 0;
+  transform: translateX(0%);
+}
+
+.serviceCard {
+  width: 50%;
+  margin-bottom: 40px;
+}
+.serviceCard p {
+  padding: 0;
+  padding-right: 80px;
+}
+
+.serviceText {
+  margin: 40px 0;
+}
+/* SERVICE STARTS HERE */
+#work .p2{  margin: 70px auto 30px auto;
+width: 874px;
+}
+#work .workCard .overlay{
+  position: absolute;
+  inset: 20px;
+  background-color: rgba(2, 145, 140, 0.85);
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+
+  transform:scale(0);
+}
+.overlay .row{
+  height: 100%;}
+
+#work .workCard:hover .overlay{
+ 
+  transform:scale(1);
+}
+#Contact {
+  padding: 50px 0;
+}
+#Contact .p2{
+  margin: 70px auto 30px auto;
+  width: 874px;
+}
+#Contactform{
+  padding: 67px 0;
+  background-color: #0a0a0b;
+ 
+}
+#Contactform .form_input{
+  width: 640px;
+  margin:  99px auto;
+ 
+  
+}
+#Contactform .form_input input{
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+ 
+}
+#Contactform .form_textarea{
+  width: 927px;
+  margin: auto;
+  color: white;
+}
+#Contactform .form_textarea label{
+  display: block;
+  text-align: center;
+}
+#Contactform .form_textarea textarea{
+  width: 100%;
+  height: 93px;
+  background-color: transparent;
+  border: none;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.p5{
+  background-color: #000000;
+  text-align: center;
+  color: #363636;
+}
